@@ -1,0 +1,86 @@
+<!--
+This page has a form that the user can fill out to contact the hotel
+-->
+<!DOCTYPE html>
+<html lang="en">
+<!--This is the header containg all of the links and title-->
+<head>
+  <title>Holiday Inn Charlotte | Contact US</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="contact.js"></script>
+</head>
+<!--The body contains all of the information-->
+<body>
+  <!--This is the nav bar div, it holds all of the links-->
+  <div class="nav">
+    <a href="home.html"> Home </a>
+    <a href="gallery.html"> Gallery </a>
+    <a href="reviews.html"> Reviews </a>
+    <a href="raffle.html"> Raffle </a>
+  </div>
+
+  <br><br>
+  <!--This is the logo image-->
+  <img src="https://ihg.scene7.com/is/image/ihg/holiday-inn_lsc_lkp_d_r_rgb_pos-web?fmt=png-alpha" alt="Holiday Inn Logo" id="logo"/>
+  <br><br>
+
+  <!--This is the main div where all of the information is stored-->
+  <div class="mainInfoContact">
+    <!--Fourm that redirects you to another page when you click submit-->
+    <form id="contact-form" action="thankyou.html" method="post">
+      <!--This holds the name label and text box-->
+      <div>
+        <label> <span>Name: (required)</span>
+          <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+        </label>
+      </div>
+      <!--This holds the email label and text box-->
+      <div>
+        <label> <span>Email: (required)</span>
+          <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+        </label>
+      </div>
+      <!--Holds the telephone label and text box-->
+      <div>
+        <label> <span>Telephone: (required)</span>
+          <input placeholder="Please enter your number" type="tel" tabindex="3" required>
+        </label>
+      </div>
+      <!--Holds the message label and text box with the placeholder text-->
+      <div>
+        <label> <span>Message: (required)</span>
+          <textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+        </label>
+      </div>
+      <!--The submit button that will submit the form-->
+      <div>
+        <button name="submit" type="submit" id="contact-submit">Send Email</button>
+      </div>
+    </form>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <!--This is the footer class containg all of the links and sub divs for the footer-->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+
+        <a href="aboutme.html">About Me</a>
+        ·
+        <a href="FAQ.html">FAQ</a>
+        ·
+        <a href="contact.html">Contact Us</a>
+      </p>
+
+      <p>Holiday Inn Inc | 2019</p>
+    </div>
+
+  </footer>
+</body>
+</html>

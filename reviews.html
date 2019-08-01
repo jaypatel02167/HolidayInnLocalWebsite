@@ -1,0 +1,97 @@
+<!--
+Customers can leave reviews on their stay. This page is not done yet. I need
+to add a plugin where the customers can enter a review and a rating in stars.
+<script src="jquery.min.js"></script>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<!--This is the header containg all of the links and title-->
+<head>
+  <title>Holiday Inn Charlotte | Reviews</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="reviews.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <link rel="stylesheet" href="jquery-ui.css" />
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="reviews.js"></script>
+  <link rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+  integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+  crossorigin="anonymous">
+  <link href="css/better-rating.css" rel="stylesheet">
+  <script src="js/better-rating.js"></script>
+  <script src="jquery-ui.js"></script>
+</head>
+<!--The body contains all of the information-->
+<body>
+  <!--This is the nav bar div, it holds all of the links-->
+  <div class="nav">
+    <a href="home.html"> Home </a>
+    <a href="gallery.html"> Gallery </a>
+    <a class="active" href="reviews.html"> Reviews </a>
+    <a href="raffle.html"> Raffle </a>
+  </div>
+
+  <br><br>
+  <!--This is the logo image-->
+  <img src="https://ihg.scene7.com/is/image/ihg/holiday-inn_lsc_lkp_d_r_rgb_pos-web?fmt=png-alpha" alt="Holiday Inn Logo" id="logo"/>
+  <br><br>
+
+  <!--This is the div where all of the form settings are-->
+  <div class="forms">
+    <form action="thankyou.html" method="get" id="better-rating-form" name="form" required>
+      <!--This holds the name label and text box-->
+      <label>Name: </label>
+      <input type="text" name="name" placeholder="Your Name" id="name" required>
+      <!--This holds the date picker UI Widget-->
+      <label for="from">From</label>
+      <input type="text" id="from" name="from">
+      <label for="to">to</label>
+      <input type="text" id="to" name="to">
+      <!--This div holds the star rating plugin-->
+      <div class="rating">
+        <i class="fa fa-star" data-rate="1"></i>
+        <i class="fa fa-star" data-rate="2"></i>
+        <i class="fa fa-star" data-rate="3"></i>
+        <i class="fa fa-star" data-rate="4"></i>
+        <i class="fa fa-star" data-rate="5"></i>
+        <input type="hidden" id="rating-count" name="rating" value="0">
+      </div>
+      <!--This holds the text label and text box with the placeholder text "Please write about your stay here" -->
+      <textarea placeholder="Please write about your stay here..." name="textArea" id="textArea" cols="30" rows="10" required></textarea>
+      <!--The submit button that will submit the review-->
+      <input type="submit" value="Send" id="submit">
+    </form>
+  </div>
+  <br><br>
+
+  <!--This div holds all of the reviews that are on the website or added to it-->
+  <div id="reviewDIV">
+    <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <h2>John Deer</h2>
+    <p> 5 Stars </p>
+    <p> The hotel was great! The rooms were clean and the price was great!</p>
+    <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+
+  <!--This is the footer class containg all of the links and sub divs for the footer-->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+
+        <a href="aboutme.html">About Me</a>
+        ·
+        <a href="FAQ.html">FAQ</a>
+        ·
+        <a href="contact.html">Contact Us</a>
+      </p>
+
+      <p>Holiday Inn Inc | 2019</p>
+    </div>
+
+  </footer>
+</body>
+</html>

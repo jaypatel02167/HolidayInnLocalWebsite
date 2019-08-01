@@ -1,0 +1,25 @@
+/*This is the nav bar styling*/
+.nav {
+  overflow: hidden;
+  background-image: linear-gradient(green, #006600);
+}
+/*Link styling*/
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*This is the styling for the links when it is hoverd over*/
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*This is the styling for the links when it is active*/
+.nav a.active {
+  color: gold;
+}

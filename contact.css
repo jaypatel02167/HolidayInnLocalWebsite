@@ -1,0 +1,201 @@
+/*This is all of the basic styling for the body of all pages*/
+body{
+	background-size: auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #b2b8b2;
+	background-position:center;
+	color: white;
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+}
+
+/*This is the styling for the logo website wide*/
+#logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+}
+
+/*This is the main info for the contact us page styling*/
+.mainInfoContact{
+	margin: auto;
+	border: 3px solid green;
+	background-color: grey;
+	width: 1700px;
+	height: auto;
+	left: 80%;
+	top: 50%;
+	text-align: justify;
+	font-family: "Times New Roman", Times, serif;
+	color: black;
+	padding: 20px;
+	margin: 0 auto;
+	width: 94%;
+}
+
+/*All of the CSS below is for the form for contact us page*/
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea,
+#contact-form button[type="submit"] {
+	font:400 12px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contact-form {
+	text-shadow:0 1px 0 #FFF;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background:#F9F9F9;
+	padding:25px;
+}
+#contact-form h3 {
+	color:green;
+	display:block;
+	font-size:28px;
+}
+#contact-form h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+#contact-form label span {
+	cursor:pointer;
+	color:green;
+	display:block;
+	margin:5px 0;
+	font-weight:900;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea {
+	width:100%;
+	box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+#contact-form input[type="text"]:hover,
+#contact-form input[type="email"]:hover,
+#contact-form input[type="tel"]:hover,
+#contact-form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+}
+#contact-form button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:green;
+	background-image:linear-gradient(to bottom, green 0%, #40ce50 52%);
+	background-image:-moz-linear-gradient(bottom, green 0%, #40ce50 52%);
+	background-image:-webkit-linear-gradient(bottom, green 0%, #40ce50 52%);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+	background:red;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+	box-shadow:inset 0 1px 3px red;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+	color:#888;
+}
+:-moz-placeholder {
+	color:#888;
+}
+::-moz-placeholder {
+	color:#888;
+}
+:-ms-input-placeholder {
+	color:#888;
+}
+
+/*Footer styling below
+*/
+.foot {
+	width: 100%;
+	background-color: green;
+	color: white;
+	text-align: center;
+}
+
+.footer-distributed{
+	background-image: linear-gradient(green, #006600);
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}

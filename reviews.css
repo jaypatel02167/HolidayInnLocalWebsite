@@ -1,0 +1,111 @@
+/*This is all of the basic styling for the body of all pages*/
+body{
+	background-size: auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #b2b8b2;
+	background-position:center;
+	color: white;
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+}
+
+/*This is the styling for the logo website wide*/
+#logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+}
+
+/*This is the styling for the form in the reviews page*/
+.forms{
+	width: 500px;
+	margin: auto;
+	border: 3px solid #73AD21;
+	text-align: center;
+	padding: 50px;
+}
+
+/*
+	This is the styling with the reviewDIV tag
+*/
+#reviewDIV {
+	margin: auto;
+	border: 3px solid green;
+	background-color: grey;
+	width: 1700px;
+	height: auto;
+	left: 80%;
+	top: 50%;
+	text-align: justify;
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+	padding: 20px;
+	margin: 0 auto;
+	width: 94%;
+}
+
+/*Footer styling below
+*/
+.foot {
+	width: 100%;
+	background-color: green;
+	color: white;
+	text-align: center;
+}
+
+.footer-distributed{
+	background-image: linear-gradient(green, #006600);
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
